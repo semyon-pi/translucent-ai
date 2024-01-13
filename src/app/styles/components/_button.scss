@@ -1,0 +1,42 @@
+.btn_container {
+    display: flex;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.btn {
+    background-color: transparent;
+    color: WHITE;
+font-weight: bold; 
+
+font-size: 1rem;
+    padding: 1.5rem 6rem 1.5rem 4rem;
+    border-radius: 3rem;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+      z-index: 1;
+
+}
+
+.btn_arrow {
+    background-color: white;
+    font-weight: bold; 
+    color: black;
+    font-size: 1rem;
+    padding: 1rem ;
+    border-radius: 100%;
+    border: 1px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.btn_arrow span {
+    font-size: 1.5rem; /* Adjust the font size of the arrow */
+  }

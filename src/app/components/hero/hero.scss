@@ -1,0 +1,128 @@
+.hero{
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;   
+    
+    &__flex-container{
+        margin: 2rem;
+    }
+
+    &__title_h1{
+        font-size: 10rem;
+        color: #8EE366;
+    }
+
+    &__title_h2{
+        font-size: 6rem;
+        color: white;
+
+    }
+      &__text{
+        font-size: 2rem;
+        padding-top: 0;
+        color: white;
+        padding-bottom: 2rem;
+      }
+
+      .circuler-svg {
+        position: absolute;
+        overflow: visible;
+        left: 2rem;
+        bottom: 5%;
+      }
+
+      svg {
+        width: 100px;
+      }
+      
+      path {
+        opacity: var(--show, 0);
+        transition: opacity 0.2s;
+      }
+      
+      .dg :is(.cr.string, .cr.number) input[type=text] {
+        color: white;
+        line-height: 1;
+      }
+}
+
+.photo{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/imgs/16-translucent-green.png');
+}
+
+.glass{
+    position: absolute;
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.2); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 310px;
+    height: 115px; 
+    border-radius: 20px; 
+    backdrop-filter: blur(14px); 
+    padding: 8px;
+    display: flex;
+
+    &__img{
+        background-size: cover;
+        background-position: center;
+        width: 150px;
+        background-image: url('/imgs/6-translucent-green.png');
+        border-top-left-radius: 10px; /* Adjust the border radius as needed */
+        border-bottom-left-radius: 10px;
+        margin-right: 1rem;      
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap; 
+      
+        li {
+          text-align: center;
+          font-weight: bold;
+          padding: 4px 6px;
+          color: white;
+          border-width: 1px;
+          border-style: solid;
+          border-color: white;
+          border-radius: 20px;
+          margin-right: 6px;
+          margin-bottom: 6px;
+          
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+    }}
+
+    @media (max-width: 600px) {
+        .hero {
+          flex-direction: column;
+        }
+      }
+    @media (max-width: 600px) {
+        .circuler-svg {
+          top: 50%;
+        }
+      }
+
