@@ -14,7 +14,7 @@ const MainSection = ({dir, img}) => {
                 </div>
                 <div dir={dir} className='content_container__flex_container'>
                     <h3 className=''>Elevate Your Style With this Visual Culture </h3>
-                    <p className=''>Our mission is to empower individuals to transcore traditional fashion boundaries and embrace the limitless possibilities offered by virutal culture". Powered by cutting-edge AI technology and patent pending PHYGITIALIZATION", developed by fashion icons", we redefine the fashion landscape by seamlessly merging the physical and digital realms.</p>
+                    <p className=''>Our mission is to empower individuals to transcore traditional fashion boundaries and embrace the limitless possibilities offered by virutal culture&quot;. Powered by cutting-edge AI technology and patent pending PHYGITIALIZATION&quot;, developed by fashion icons&quot;, we redefine the fashion landscape by seamlessly merging the physical and digital realms.</p>
                     <Button text={'DISCOVER'} />
                 </div>
             </div>
